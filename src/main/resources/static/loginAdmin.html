@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<section class="d-xxl-flex login-clean">
+    <form onsubmit="return checkEmail(this);" class="shadow-sm" id="emailForm">
+        <h2 class="visually-hidden">Login Form</h2>
+        <div class="illustration">
+            <img id="logo" src="assets/img/logo.png">
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-flex justify-content-center">Admin Login</label>
+            <input class="form-control" type="email" name="email" placeholder="Email" id="adminEmailInput">
+        </div>
+        <div class="mb-3" id="toPassBtn">
+            <button class="btn btn-primary d-block w-100" type="submit">Next</button>
+        </div>
+    </form>
+
+    <form onsubmit="return checkPassword(this);" class="shadow-sm" id="passForm">
+        <h2 class="visually-hidden">Login Form</h2>
+        <div class="illustration">
+            <img id="logo2" src="assets/img/logo.png">
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-flex justify-content-center" id="loginName">Admin Login</label>
+            <input class="form-control" type="email" name="email" placeholder="Email" id="adminEmail">
+        </div>
+        <div class="mb-3" id="passwordField">
+            <input class="form-control" type="password" name="password" placeholder="Password" id="adminPasswordInput">
+        </div>
+        <div class="mb-3" id="loginBtn">
+            <button class="btn btn-primary d-block w-100" type="submit" id="logRegBtn">Log In</button>
+            <button type="button" class="btn btn-primary d-block w-100" onclick="back();">Indietro</button>
+        </div>
+    </form>
+</section>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1500;">
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto text-white"></strong>
+        </div>
+        <div class="toast-body"></div>
+    </div>
+</div>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/loginAdmin.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/toast.js"></script>
+<script src="assets/js/formData.js"></script>
+</body>
+
+</html>

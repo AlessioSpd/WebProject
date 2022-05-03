@@ -1,0 +1,1 @@
+INSERT INTO public.amministratore (created_date, deleted, modified_date, email, "password") VALUES(CURRENT_TIMESTAMP, 0, CURRENT_TIMESTAMP, 'admin@admin', '$2a$12$Q10r0KdFIE8t4rtcQjxTfOkFXCi7WfRE39ir753DpWwofEq.XU3zm');
